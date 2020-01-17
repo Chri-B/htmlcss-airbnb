@@ -4,6 +4,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* stilizzazione header e posizionamento */
+header {
+    background-color: #ececec;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 2%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    border-radius: 50%;
+    text-align: center;
+}
+/* stilizzazione e posizionamento logo AirBnB */
+i {
+    color: red;
+    font-size: 40px;
+    transform: translate(0,10%);
+}
+
 /* Stilizzazione container generale */
 .container {
     width: 100vw;
