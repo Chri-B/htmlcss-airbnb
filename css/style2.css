@@ -4,51 +4,70 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Stilizzazione container generale */
-.luogo {
+
+.sfondo {
+    background-color: lightblue;
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    text-align: center;
 }
-/* Aggiunta foto prima località */
+
+.container {
+    background-color: #ececec;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
 .primo {
     background-image: url("https://flexitreks.com/wp-content/uploads/2015/08/Cala-Macarella-Menorca-Spain.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
 }
-/* Aggiunta foto seconda località */
 .secondo {
     background-image: url("http://www.makotour.it/wp-content/uploads/2018/05/2e2e263bafd5964b9ff22340e9ca9c8e.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-top: 1px solid white;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
 }
-/* Aggiunta foto terza località */
 .terzo {
     background-image: url("https://www.greeka.com/village_beach/photos/829/foki-fiskardo-top-1-1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-top: 1px solid white;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
 }
-/* Stilizzazione testo */
+
+.overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+}
 .testo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 15px;
     color: white;
     border: 1px solid white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
+    display: none;
 }
-/* stilizzazione overlay */
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+
+.luogo:hover .testo{
+    display: block;
 }
